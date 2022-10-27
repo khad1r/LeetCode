@@ -100,6 +100,23 @@ class BinarySearchTree {
             this.postOrderPrint(currentNode.rightChild);
             console.log(currentNode.val);
         }
+    }    
+    traverseBFS() {
+        if (!this.root) return;
+        this.queue = [];
+        this.queue.push(this.root);
+        this.output = [];
+        while (this.queue.length) {
+            const node = this.queue.shift();
+            if (node.leftChild) {
+                this.queue.push(node.leftChild);
+            }
+            if (node.rightChild) {
+                this.queue.push(node.rightChild);
+            }
+            this.output.push(node.val);
+        }
+        return this.output;
     }
 }
 var BST = new BinarySearchTree(6);
@@ -223,22 +240,22 @@ With level-order traversal, trees are traversed **level-wise**. This means that
 > This is similar to breadth-first search from [graph algorithms](https://www.educative.io/blog/graph-algorithms-tutorial).
 
 ```javascript
-function traverseBFS() {
-    if (!this.root) return;
-    this.queue = [];
-    this.queue.push(this.root);
-    this.output = [];
-    while (this.queue.length) {
-        const node = this.queue.shift();
-        if (node.left) {
-            this.queue.push(node.left);
-        }
-        if (node.right) {
-            this.queue.push(node.right);
-        }
-        this.output.push(node.data);
-    }
-    return this.output;
+traverseBFS() {
+	if (!this.root) return;
+	this.queue = [];
+	this.queue.push(this.root);
+	this.output = [];
+	while (this.queue.length) {
+		const node = this.queue.shift();
+		if (node.leftChild) {
+			this.queue.push(node.leftChild);
+		}
+		if (node.rightChild) {
+			this.queue.push(node.rightChild);
+		}
+		this.output.push(node.val);
+	}
+	return this.output;
 }
 ```
   
