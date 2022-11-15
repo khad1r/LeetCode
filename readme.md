@@ -24,6 +24,12 @@
 	* [[30_oct_2022#Majority Element]]
 		return majority element in array
 		[store each element as key and count each apearing then return the element that apears more than `⌊n / 2⌋` times]
+		
+	* [[15_Nov_2022#Convert Sorted Array to Binary Search Tree]]
+		convert array to a height balanced binary tree
+		
+	* [[15_Nov_2022#Pascal's Triangle]]
+		generate a pascal triangle
 ___
 
 * Linked List
