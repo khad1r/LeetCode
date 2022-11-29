@@ -56,6 +56,9 @@ ___
 		find if a linked list is palindrome
 		[find middle linked by using tortoise and the hare algorithm then reverse half of it and then compare of each half]
 		
+	* [[29_Nov_2022#Add Two Numbers]]
+		add two linked list and put each digit to a linked list
+		[using school sum step]
 ___
 
 * Binary Tree
@@ -75,6 +78,9 @@ ___
 		return invert of a binary tree
 		[for this problem can be solve by using Level-Order (Breadth-First) Traversal for each node in queue we switch branch]
 		
+	* [[29_Nov_2022#Diameter of Binary Tree]]
+		return the diameter of tree
+		[solution is by comparing max diameter left diameter, right diameter and root diameter recursively using post-order traversal]
 ___
 
 * Misc
